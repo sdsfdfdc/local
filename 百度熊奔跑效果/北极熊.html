@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+        background-color: slategrey;
+    }
+  
+    @keyframes play{
+        0%{
+            background-position: 0px 0px;
+
+        }
+        100%{
+            background-position: -1600px 0px;
+        }
+    }
+    @keyframes move{
+     from{
+       margin-left: 0px;
+     }
+     to{
+       margin-left: 50%;
+       transform: translateX(-100px);
+     }
+    } 
+   
+    div{
+        margin-top: 100px;
+        width: 200px;
+        height: 100px;
+        background: url(upload/bear.png) no-repeat;
+        animation: play 1s steps(8) 0s infinite forwards, move 5s forwards ;
+    }
+</style>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>
